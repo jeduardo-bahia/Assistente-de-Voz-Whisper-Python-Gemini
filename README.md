@@ -37,7 +37,9 @@ cd Assistente-de-Voz-Whisper-Python-Gemini
 Recomenda-se o uso de um ambiente virtual (venv):
 
 python -m venv venv
+
 source venv/bin/activate  # Linux/Mac
+
 venv\Scripts\activate     # Windows
 
 pip install -r requirements.txt
