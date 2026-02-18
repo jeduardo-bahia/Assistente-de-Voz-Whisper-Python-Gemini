@@ -1,62 +1,55 @@
-# 🛡️ Gemini Voice: Assistente Virtual com IA
+# 🛡️ Gemini Voice Escudeiro: Assistente Virtual com IA
 
 ![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
 ![Gemini](https://img.shields.io/badge/IA-Gemini%202.5%20Flash-orange)
 ![Whisper](https://img.shields.io/badge/Speech--to--Text-Faster--Whisper-green)
-![License](https://img.shields.io/badge/license-MIT-blue)
 
-Um assistente de voz inteligente desenvolvido em Python que utiliza o modelo **Faster-Whisper** para transcrição local de alta performance e a **API do Gemini** para processamento de linguagem natural.
-
+O **Gemini Voice Escudeiro** é um assistente de voz inteligente projetado para oferecer uma interação natural e rápida. Ele combina tecnologias de ponta para garantir que o processamento seja eficiente e respeite a privacidade do usuário.
 
 
-## 🚀 Funcionalidades
 
-- **Transcrição Local**: Utiliza o Faster-Whisper (modelo `small`) para converter fala em texto com baixa latência, sem enviar áudio para a nuvem.
-- **Inteligência Artificial**: Integrado ao Gemini 2.5 Flash para respostas rápidas, precisas e contextuais.
-- **Feedback de Voz**: Respostas convertidas em áudio via gTTS e reproduzidas diretamente na memória RAM.
-- **Privacidade e Limpeza**: O sistema não salva arquivos residuais de áudio (`.mp3` ou `.wav`) no disco, operando via buffers de memória.
-- **Redução de Ruído**: Tratamento de áudio via `noisereduce` para melhor precisão em ambientes barulhentos.
+## 🚀 Funcionalidades Principais
+
+**Transcrição de Alta Performance** Utiliza o modelo `Faster-Whisper` localmente. Isso significa que sua voz é convertida em texto no seu próprio computador, garantindo maior velocidade e privacidade sem depender de nuvem para o Speech-to-Text.
+
+**Cérebro de Nova Geração** As respostas são geradas pelo `Gemini 2.5 Flash`, um dos modelos mais rápidos e inteligentes da atualidade, capaz de entender contextos complexos e fornecer respostas úteis em segundos.
+
+**Áudio Inteligente e Limpo** Diferente de outros assistentes, este projeto utiliza buffers de memória RAM para processar o áudio. O sistema não salva arquivos `.mp3` no seu computador, mantendo sua pasta de projeto sempre limpa e organizada.
 
 ## 🛠️ Tecnologias Utilizadas
 
-- [Python 3.11+](https://www.python.org/)
-- [Faster-Whisper](https://github.com/SYSTRAN/faster-whisper) (STT)
-- [Google Gemini API](https://ai.google.dev/) (LLM)
-- [gTTS](https://pypi.org/project/gTTS/) (TTS)
-- [Pygame](https://www.pygame.org/) (Audio Playback)
-- [SoundDevice](https://python-sounddevice.readthedocs.io/) (Audio Capture)
+* **Python 3.11+**: Linguagem base do projeto.
+* **Faster-Whisper**: Motor de transcrição (STT) de alta eficiência.
+* **Google Gemini API**: O "cérebro" do assistente (LLM).
+* **gTTS & Pygame**: Responsáveis pela geração e reprodução da voz.
+* **Noisereduce**: Filtro para limpeza de ruídos do microfone.
 
-## 📦 Instalação e Configuração
+## 📦 Configuração do Ambiente
 
-### 1. Clonar o repositório
+Siga os passos abaixo para preparar sua máquina:
 
-git clone [https://github.com/jeduardo-bahia/Assistente-de-Voz-Whisper-Python-Gemini.git](https://github.com/jeduardo-bahia/Assistente-de-Voz-Whisper-Python-Gemini.git)
-cd Assistente-de-Voz-Whisper-Python-Gemini
+1.  **Clonar o Projeto**:
+    ```bash
+    git clone [https://github.com/jeduardo-bahia/Assistente-de-Voz-Whisper-Python-Gemini.git](https://github.com/jeduardo-bahia/Assistente-de-Voz-Whisper-Python-Gemini.git)
+    cd Assistente-de-Voz-Whisper-Python-Gemini
+    ```
 
-### 2. Instalar Dependências
-Recomenda-se o uso de um ambiente virtual (venv):
+2.  **Instalar Dependências**:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-python -m venv venv
+3.  **Variáveis de Ambiente**:
+    Crie um arquivo chamado `.env` e insira sua chave da API do Gemini:
+    `GEMINI_API_KEY=SUA_CHAVE_AQUI`
 
-source venv/bin/activate  # Linux/Mac
+## 🎮 Como Iniciar
 
-venv\Scripts\activate     # Windows
+Para começar a conversar com seu assistente, basta rodar o comando:
 
-pip install -r requirements.txt
+`python main.py`
 
-### 3. Configurar Variáveis de Ambiente
-Crie um arquivo .env na raiz do projeto e adicione sua chave de API: GEMINI_API_KEY=SUA_CHAVE_AQUI
+O sistema ouvirá por 5 segundos, processará sua fala e responderá por voz. Para encerrar o programa a qualquer momento, você pode dizer as palavras-chave **"Sair"** ou **"Encerrar"**.
 
-## 🎮 Como Usar
-1 - Execute o script principal: python main.py
-2 - O sistema aguardará 5 segundos de gravação.
-3 - Fale sua pergunta ou comando.
-4 - Para encerrar, basta dizer as palavras "Sair" ou "Encerrar".
-
-🛡️ Segurança
-Este projeto utiliza python-dotenv para gerenciar chaves de API. O arquivo .env está incluído no .gitignore para evitar o vazamento acidental de credenciais em repositórios públicos.
-
-📄 Licença
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
-Desenvolvido por Jhonanthan Eduardo 🚀
+---
+Desenvolvido por [Jhonanthan Eduardo](https://github.com/jeduardo-bahia)
