@@ -1,10 +1,10 @@
-# 🛡️ Gemini Voice Escudeiro: Assistente Virtual com IA
+# 🛡️ Gemini Voice: Assistente Virtual com IA
 
 ![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
 ![Gemini](https://img.shields.io/badge/IA-Gemini%202.5%20Flash-orange)
 ![Whisper](https://img.shields.io/badge/Speech--to--Text-Faster--Whisper-green)
 
-O **Gemini Voice Escudeiro** é um assistente de voz inteligente projetado para oferecer uma interação natural e rápida. Ele combina tecnologias de ponta para garantir que o processamento seja eficiente e respeite a privacidade do usuário.
+O **Gemini Voice** é um assistente de voz inteligente projetado para oferecer uma interação natural e rápida. Ele combina tecnologias de ponta para garantir que o processamento seja eficiente e respeite a privacidade do usuário.
 
 
 
