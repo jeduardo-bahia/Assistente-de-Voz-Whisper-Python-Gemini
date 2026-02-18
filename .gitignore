@@ -1,0 +1,11 @@
+# Segredos
+.env
+
+# Arquivos temporários de áudio
+*.mp3
+
+# Python e IDEs
+__pycache__/
+venv/
+.vscode/
+.idea/
