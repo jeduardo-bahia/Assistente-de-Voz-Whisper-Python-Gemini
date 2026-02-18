@@ -29,7 +29,7 @@ Um assistente de voz inteligente desenvolvido em Python que utiliza o modelo **F
 ## 📦 Instalação e Configuração
 
 ### 1. Clonar o repositório
-```bash
+
 git clone [https://github.com/jeduardo-bahia/Assistente-de-Voz-Whisper-Python-Gemini.git](https://github.com/jeduardo-bahia/Assistente-de-Voz-Whisper-Python-Gemini.git)
 cd Assistente-de-Voz-Whisper-Python-Gemini
 
